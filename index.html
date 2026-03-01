@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ECE 1201 – Electron Devices</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+    <div class="header-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScjkg0l_WF-H4yKfb7K8FfMarK-e4RGzHG4w&s" alt="Crescent Logo" class="logo">
+        <div>
+            <h1>ECE 1201 – Electron Devices</h1>
+            <p>B.Tech – Electronics and Communication Engineering</p>
+            <p>Regulations 2025</p>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Course</a>
+    <a href="#syllabus">Syllabus</a>
+    <a href="#modules">Modules</a>
+    <a href="#notes">Notes</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="card">
+    <h2>Course Description</h2>
+    <p>
+        Electron Devices is a foundational course that introduces semiconductor physics,
+        diode theory, transistor operation, field effect devices, power control components,
+        and optoelectronic devices. This course builds the fundamental knowledge required
+        for analog electronics, digital systems, VLSI, and power electronics.
+    </p>
+
+    <h3>Total Credits</h3>
+    <ul>
+        <li>L: 3</li>
+        <li>T: 0</li>
+        <li>P: 0</li>
+        <li>C: 3</li>
+        <li>Total Hours: 45</li>
+    </ul>
+</section>
+
+<section id="about" class="card">
+    <h2>Course Objectives</h2>
+    <ul>
+        <li>Understand construction and characteristics of PN junction diodes.</li>
+        <li>Analyze operation and biasing of BJT.</li>
+        <li>Study JFET and MOSFET characteristics.</li>
+        <li>Learn SCR and TRIAC working principles.</li>
+        <li>Explore special diodes and optoelectronic devices.</li>
+    </ul>
+
+    <h3>Prerequisites</h3>
+    <ul>
+        <li>Fundamentals of Physics</li>
+        <li>Basic Electrical Circuits</li>
+    </ul>
+</section>
+
+<section id="syllabus" class="card">
+    <h2>Course Outcome</h2>
+    <ul>
+        <li>Understand semiconductor device physics</li>
+        <li>Analyze electronic device characteristics</li>
+        <li>Design basic analog circuits</li>
+        <li>Apply power devices in real-world applications</li>
+    </ul>
+</section>
+
+<section id="modules" class="card">
+    <h2>Module Structure</h2>
+
+    <button onclick="toggle('m1')">Module I – PN Junction Diode</button>
+    <div id="m1" class="hidden">
+        <ul>
+            <li>Semiconductor fundamentals</li>
+            <li>PN junction formation</li>
+            <li>V-I characteristics</li>
+            <li>Zener & Avalanche breakdown</li>
+            <li>Rectifiers, Clippers, Clampers</li>
+            <a href="pn junction diode.html">Detailed Syllabus →</a>
+        </ul>
+    </div>
+
+    <button onclick="toggle('m2')">Module II – BJT</button>
+    <div id="m2" class="hidden">
+        <ul>
+            <li>NPN & PNP construction</li>
+            <li>Configurations (CB, CE, CC)</li>
+            <li>Hybrid & Ebers-Moll model</li>
+            <li>Biasing & Q-point</li>
+            <li>Amplifier & Switch applications</li>
+            <a href="bjt.html">Detailed Syllabus →</a>
+        </ul>
+    </div>
+
+    <button onclick="toggle('m3')">Module III – FET</button>
+    <div id="m3" class="hidden">
+        <ul>
+            <li>JFET characteristics</li>
+            <li>MOSFET types</li>
+            <li>Threshold voltage</li>
+            <li>Short channel effects</li>
+        </ul>
+    </div>
+
+    <button onclick="toggle('m4')">Module IV – Power Devices</button>
+    <div id="m4" class="hidden">
+        <ul>
+            <li>SCR, TRIAC, DIAC</li>
+            <li>Triggering methods</li>
+            <li>Protection circuits</li>
+        </ul>
+    </div>
+
+    <button onclick="toggle('m5')">Module V – Special & Optoelectronic Devices</button>
+    <div id="m5" class="hidden">
+        <ul>
+            <li>Zener, Schottky, Tunnel Diode</li>
+            <li>LED, OLED, Laser Diode</li>
+            <li>Solar Cell</li>
+        </ul>
+    </div>
+</section>
+
+<section id="notes" class="card">
+    <h2>Notes & Materials</h2>
+    <p>Lecture notes and lab manuals will be uploaded soon.</p>
+</section>
+
+<section id="contact" class="card">
+    <h2>Contact</h2>
+    <p>Email: ece@college.edu</p>
+    <p>Department of Electronics and Communication Engineering</p>
+</section>
+
+<footer>
+    <p>© 2026 ECE Department | Developed by  Mohammed Omar Farooq 1st Year</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
