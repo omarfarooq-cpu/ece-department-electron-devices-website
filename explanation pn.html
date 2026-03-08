@@ -337,7 +337,349 @@ into direct current (DC).
 </ul>
 
 </section>
+<section class="card">
+<h2>Half Wave Rectifier</h2>
+<p>
+    <h3>1. Definition</h3>
+A half wave rectifier uses a single diode to allow only one half of the AC waveform to pass through, resulting in a pulsating DC output.
+</p>
+<p>
+    <h3>2. Components Used</h3>
 
+Typical half wave rectifier circuit contains:
+
+AC Voltage Source / Transformer
+
+PN Junction Diode
+
+Load Resistor (RL)          
+    
+<h3>3. Circuit Diagram Explanation</h3>
+<img src="https://www.watelectronics.com/wp-content/uploads/half-wave-rectifier.jpg" alt="Half Wave Rectifier Circuit" width="300"/>
+In the circuit:
+
+The transformer provides AC voltage.
+
+The diode acts as a switch.
+
+The load resistor (RL) receives the rectified output.
+
+The diode is connected in series with the load resistor.
+
+<h3>4. Working Principle</h3>
+
+The operation depends on the two half cycles of the AC input.
+
+<h3>(1) Positive Half Cycle</h3>
+
+During the positive half cycle, the anode of the diode becomes positive relative to the cathode.
+
+The diode becomes forward biased.
+
+Current flows through the circuit.
+
+Therefore:
+
+Current flows through RL
+
+Output voltage appears across the load.
+
+Result:
+The positive half of the AC waveform appears at the output.
+
+<h3>(2) Negative Half Cycle</h3>
+
+During the negative half cycle, the anode becomes negative relative to the cathode.
+
+The diode becomes reverse biased.
+
+No current flows through the circuit.
+
+Result:
+The negative half of the waveform is blocked.
+
+<h3>5. Input and Output Waveforms</h3>
+<img src="https://www.circuitfeed.com/wp-content/uploads/2022/06/half-wave-rectifier-graph.png" alt="Input and Output Waveforms" width="400"/>
+
+Input waveform: Complete sinusoidal AC wave.
+
+Output waveform: Only positive half cycles.
+
+Thus the output becomes pulsating DC.
+
+<h3>6. Important Formulae</h3>
+Peak Current
+𝐼
+𝑚
+=
+𝑉
+𝑚
+𝑅
+𝐿
+I
+m
+	​
+
+=
+R
+L
+	​
+
+V
+m
+	​
+
+	​
+
+
+Where
+
+𝑉
+𝑚
+V
+m
+	​
+
+ = Maximum input voltage
+
+𝑅
+𝐿
+R
+L
+	​
+
+ = Load resistance
+
+Average (DC) Output Voltage
+𝑉
+𝐷
+𝐶
+=
+𝑉
+𝑚
+𝜋
+V
+DC
+	​
+
+=
+π
+V
+m
+	​
+
+	​
+
+Average (DC) Current
+𝐼
+𝐷
+𝐶
+=
+𝐼
+𝑚
+𝜋
+I
+DC
+	​
+
+=
+π
+I
+m
+	​
+
+	​
+
+RMS Current
+𝐼
+𝑅
+𝑀
+𝑆
+=
+𝐼
+𝑚
+2
+I
+RMS
+	​
+
+=
+2
+I
+m
+	​
+
+	​
+
+Rectification Efficiency
+𝜂
+=
+40.6
+%
+η=40.6%
+
+This means only 40.6% of AC power is converted into DC power.
+
+Ripple Factor
+𝑟
+=
+1.21
+r=1.21
+
+Ripple means AC fluctuations present in DC output.
+
+Peak Inverse Voltage (PIV)
+𝑃
+𝐼
+𝑉
+=
+𝑉
+𝑚
+PIV=V
+m
+	​
+
+
+Maximum reverse voltage the diode must withstand.
+
+<h3>7. Advantages</h3>
+
+✔ Simple circuit
+✔ Low cost
+✔ Easy to design
+
+<h3>8. Disadvantages</h3>
+
+✘ Low efficiency
+✘ High ripple
+✘ Poor DC output quality
+✘ Not suitable for high power applications
+
+<h3>9. Applications</h3>
+
+Low power DC supplies
+Signal demodulation
+Simple battery chargers
+Radio circuits
+</p>
+</section>
+<section class="card">
+    <h2>Full Wave Rectifier</h2>
+<p>
+A full wave rectifier uses two or more diodes to allow both halves of the AC waveform to pass through, resulting in a smoother DC output compared to a half wave rectifier. There are two common types of full wave rectifiers: the center-tapped full wave rectifier and the bridge rectifier.
+</p>
+<h3>Types of Full Wave Rectifiers</h3>
+<ul>
+<li>Center-Tapped Full Wave Rectifier</li>
+<li>Bridge Rectifier</li>
+</ul>
+</section>
+<section class="card">
+<h3>Center-Tapped Full Wave Rectifier</h3>
+<p>
+    <h3>1. Definition</h3>
+A center-tapped full wave rectifier uses a transformer with a center-tapped secondary winding and two diodes. Each diode conducts during alternate half cycles of the AC input, allowing both halves of the waveform to be rectified.
+<h3>2. Construction</h3>
+
+A centre tapped transformer consists of:
+
+<h4>Primary winding</h4>
+
+Secondary winding split into two equal halves Centre tap connection at the middle of secondary If the total secondary voltage is Vs, then: Voltage between centre tap and one end = Vs / 2 Voltage between centre tap and other end = Vs / 2 The two halves produce equal magnitude but opposite polarity voltages.
+
+Example:
+If secondary voltage = 12V
+
+End 1 to centre tap = 6V
+
+End 2 to centre tap = 6V
+
+<h3>3. Working Principle</h3>
+
+The centre tapped transformer works based on mutual induction.
+
+<h4>Step 1 – AC Input</h4>
+
+When AC voltage is applied to the primary winding, an alternating magnetic flux is produced in the transformer core.
+
+<h4>Step 2 – Induced Voltage</h4>
+
+This changing magnetic flux induces alternating voltages in the secondary winding.
+
+<h4>Step 3 – Centre Tap Function</h4>
+Because the secondary winding is split into two equal parts: Each half produces voltage during alternate half cycles The centre tap acts as a common reference point This feature is mainly used in Full Wave Rectifiers.
+
+<h3>4. Operation in Full Wave Rectifier</h3>
+
+<h4>During the positive half cycle:</h4>
+Upper secondary winding becomes positive First diode conducts Current flows through load
+
+<h4>During the negative half cycle:</h4>
+Lower secondary winding becomes positive Second diode conducts Current flows through load in the same direction Thus both half cycles are used to produce full wave rectification.
+
+<h3>5. Voltage Relationship</h3>
+
+If total secondary voltage is 
+𝑉
+𝑠
+V
+s
+	​
+
+:
+
+𝑉
+ℎ
+𝑎
+𝑙
+𝑓
+=
+𝑉
+𝑠
+2
+V
+half
+	​
+
+=
+2
+V
+s
+	​
+
+	​
+
+
+<h3>Example:</h3>
+
+Total Secondary Voltage	Voltage per Half
+12V	6V
+24V	12V
+18V	9V
+<h3>6. Advantages</h3>
+
+✔ Provides two equal voltages
+✔ Used in full wave rectifiers
+✔ Better rectification efficiency than half wave
+✔ Useful for dual power supplies (+V and –V)
+
+<h3>7. Disadvantages</h3>
+
+✘ Requires special transformer design
+✘ Only half of the secondary is used at a time
+✘ Bulkier compared to bridge rectifier transformers
+
+<h3>8. Applications</h3>
+
+Full Wave Rectifier circuits
+
+Dual polarity power supplies
+
+Analog amplifier circuits
+
+Audio equipment
+</p>
+</section>
 
 <section class="card">
 
