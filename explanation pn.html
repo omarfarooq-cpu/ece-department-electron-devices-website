@@ -318,7 +318,290 @@ in current.
 In a PN junction, the energy bands of the P-type and N-type materials align to form a continuous energy band structure. The conduction band of the N-type material is higher than that of the P-type material, while the valence band of the P-type material is higher than that of the N-type material. This alignment creates a potential barrier at the junction, which affects the movement of charge carriers and determines the electrical behavior of the diode.
 </p>
 </section>
+<section class="card">
+    <h2> Derivation of Built in Potential using Energy Band diagram</h2>
+    <h2>Introduction</h2>
 
+<p>
+When a P-type and N-type semiconductor are joined together, a PN junction is formed. 
+Due to the difference in carrier concentration, electrons diffuse from the N region 
+to the P region and holes diffuse from the P region to the N region.
+</p>
+
+<p>
+This diffusion creates a depletion region near the junction which develops an 
+electric field and a potential barrier known as the <b>built-in potential (Vb)</b>.
+</p>
+<h2>Energy Band Diagram Explanation</h2>
+    <p>
+<img src="https://www.poriyaan.in/media/imgPori/images21/oyfzPcL.png" alt="Energy Band Diagram" width="400"/>
+        </p>
+        <h2>Step-by-Step Derivation</h2>
+
+<h3>Step 1: Total Energy</h3>
+
+<p>
+The total energy difference across the junction is
+</p>
+
+<p><b>E = E₁ + E₂</b></p>
+
+<p>
+where  
+E₁ = Energy difference in P-side  
+E₂ = Energy difference in N-side
+</p>
+
+<h3>Step 2: Relation between Energy and Potential</h3>
+
+<p>
+Energy and potential are related by
+</p>
+
+<p><b>E = qV</b></p>
+
+<p>
+Therefore,
+</p>
+
+<p><b>V<sub>b</sub> = E / q</b></p>
+
+<h2>Energy Relations</h2>
+
+<h3>P-type Semiconductor</h3>
+
+<p>
+E<sub>F</sub> - E<sub>V</sub> = E<sub>g</sub>/2 - E₁
+</p>
+
+<p>
+E₁ = E<sub>g</sub>/2 - (E<sub>F</sub> - E<sub>V</sub>)
+</p>
+
+<h3>N-type Semiconductor</h3>
+
+<p>
+E<sub>C</sub> - E<sub>F</sub> = E<sub>g</sub>/2 - E₂
+</p>
+
+<p>
+E₂ = E<sub>g</sub>/2 - (E<sub>C</sub> - E<sub>F</sub>)
+</p>
+
+<h2>Substituting E₁ and E₂</h2>
+
+<p>
+E = E₁ + E₂
+</p>
+
+<p>
+E = [E<sub>g</sub>/2 - (E<sub>F</sub> - E<sub>V</sub>)] + [E<sub>g</sub>/2 - (E<sub>C</sub> - E<sub>F</sub>)]
+</p>
+
+<p>
+E = E<sub>g</sub> - (E<sub>F</sub> - E<sub>V</sub>) - (E<sub>C</sub> - E<sub>F</sub>)
+</p>
+<h2>Using Law of Mass Action</h2>
+
+<p>
+np = n<sub>i</sub><sup>2</sup>
+</p>
+
+<p>
+np = N<sub>c</sub>N<sub>v</sub> e<sup>-E<sub>g</sub>/kT</sup>
+</p>
+
+<p>
+E<sub>g</sub> = kT ln ( N<sub>c</sub>N<sub>v</sub> / n<sub>i</sub><sup>2</sup> )
+</p>
+
+
+<h2>Carrier Concentration Relations</h2>
+
+<p>
+E<sub>C</sub> - E<sub>F</sub> = kT ln ( N<sub>c</sub> / N<sub>D</sub> )
+</p>
+
+<p>
+E<sub>F</sub> - E<sub>V</sub> = kT ln ( N<sub>v</sub> / N<sub>A</sub> )
+</p>
+<h2>Final Derivation</h2>
+
+<p>
+Substituting the above relations in the energy equation:
+</p>
+
+<p>
+E = kT ln ( N<sub>D</sub>N<sub>A</sub> / n<sub>i</sub><sup>2</sup> )
+</p>
+
+<p>
+Since V<sub>b</sub> = E/q
+</p>
+
+<h3 style="color:red;">
+V<sub>b</sub> = (kT / q) ln ( N<sub>D</sub>N<sub>A</sub> / n<sub>i</sub><sup>2</sup> )
+</h3>
+<h2>Conclusion</h2>
+
+<p>
+The built-in potential across a PN junction depends on doping concentrations 
+and intrinsic carrier concentration of the semiconductor. This derivation explains 
+the origin of the potential barrier formed at the junction.
+</p>
+</section>
+<section class="card">
+    <h1>IDEAL DIODE EQUATION</h1>
+ <p>
+    <!-- Add P-N junction diagram here -->
+    To derive the Ideal Diode Equation we assume the following:
+    <br>
+    1.The length of p and n side regions are larger compared to the diffusion length of the minority carriers.
+    <br>
+    2.The depletion region is completely depleted by mobile carriers and the region outside the depletion region is perfectly neutral.
+    <br>
+    3.The P-N junction formed is abrupt and hence the carrier concentration is constant on either sides of the diode.
+    <br>
+    4.The contacts at both the ends are ohmic contacts and minority carrier density at the contact equals the equilibrium value.
+    <br>
+    5.Temperature and doping is enought to ionize the impurities completely.
+    <br>
+    6.There is no generation or recombination of carriers in the depletion region.Therefore the hole and electron current in this region is constant.
+    <br>
+    7.The diode is in a steady state condition(A state where the current and voltage are constant with time).
+    <br>
+    Let us consider the following parameters:
+    <br>
+    X<sub>n</sub> refers to the width of the n side and X<sub>p</sub> refers to the width of the p side.
+    <br>
+    I is the current flowing through the diode and V is the voltage across the diode.
+    <br>
+    I<sub>p</sub> is the hole current and I<sub>n</sub> is the electron current.
+    <br>
+    Then, I = I<sub>p</sub> + I<sub>n</sub>
+    <br>
+    I=I<sub>p</sub>diff(X<sub>n</sub>=0) + I<sub>n</sub>diff(X<sub>p</sub>=0)......(1)
+    <br>
+    Total current I is evaluated at any point in the depletion region.
+    <br>
+    <!-- Add the minority carrier distribution diagram here -->
+     n<sub>p0</sub> At equilibrium is the electron concentration on the p side and p<sub>n0</sub> is the hole concentration on the n side at equilibrium.
+        <br>
+    ∆n<sub>p</sub> is the excess electron concentration on the p side and ∆p<sub>n</sub> is the excess hole concentration on the n side.
+    <br>
+    We know that, V<sub>0</sub> = (kT/q)ln(P<sub>p0</sub>/P<sub>n0</sub>) where V<sub>0</sub>
+    is the built in potential of the diode.
+    <br>
+    (P<sub>p0</sub>/P<sub>n0</sub>) = e<sup>V<sub>0</sub>/(kT/q)</sup>.......(2)
+    When a forward bias voltage V<sub>a</sub> is applied V<sub>0</sub> changes to V<sub>0</sub> - V<sub>a</sub>.
+    <br>
+    P<sub>p0</sub> at edge X<sub>p</sub>
+    <br>
+    P<sub>n0</sub> at edge X<sub>n</sub>
+    <br>
+    P<sub>p0</sub>/P<sub>n0</sub> = e<sup>q(V<sub>0</sub>-V<sub>a</sub>)/(kT)</sup>.......(3)
+    <br>
+    The concentration at p side is constant.....
+    Then equation (3) can be written as,
+    <br>
+    P<sub>p0</sub>/P<sub>n0</sub>(X<sub>n</sub>=0) = e<sup>q(V<sub>0</sub>-V<sub>a</sub>)/(kT)</sup>.......(4)
+    <br>
+    From equation (2) and (4) we can write,
+    <br>
+    P<sub>n</sub>(X<sub>n</sub>=0)/P<sub>n0</sub> = e<sup>qV<sub>a</sub>/(kT)</sup>.......(5)
+    <br>
+    Similarly, we can write,
+    <br>
+    P<sub>p</sub>(X<sub>p</sub>=0)/P<sub>p0</sub> = e<sup>qV<sub>a</sub>/(kT)</sup>.......(6)
+    <br>
+    The excess minority carrier concentration at the edges of the depletion region can be written as,
+    <br>
+    ∆P<sub>n</sub>=P<sub>n</sub> (X<sub>n</sub>=0).......(7)
+    <br>
+    Substituting equation (5) in (7) we can write,
+    <br>
+    ∆P<sub>n</sub> = P<sub>n0</sub>(e<sup>qV<sub>a</sub>/(kT)</sup> - 1).......(8)
+    <br>
+    Similarly, we can write,
+    <br>
+    ∆N<sub>p</sub> = N<sub>p0</sub>(e<sup>qV<sub>a</sub>/(kT)</sup> - 1).......(9)  
+    <br>
+    Eq. 7 and 8 gives the excess minority carrier concentration at the edges of the depletion region.
+    <br>
+    It's magnitude also depends on the equilibrium minority carrier concentration.
+    <br>
+    By continuity equation for holes and electrons we can write,
+    <br>
+    ∂p/∂t = D<sub>p</sub>∂<sup>2</sup>p/∂x<sup>2</sup> - δp/τ<sub>p</sub>.......(10)
+    <br>
+    under steady state equation...∂p/∂t = 0
+    <br>
+    D<sub>p</sub>∂<sup>2</sup>p/∂x<sup>2</sup> - δp/τ<sub>p</sub> = 0
+    <br>
+    Let y=δp, then the above equation can be written as,
+    <br>
+    ∂<sup>2</sup>y/∂x<sup>2</sup> = y/τ<sub>p</sub>D<sub>p</sub> 
+    <br>
+    L<sub>p</sub> = √(τ<sub>p</sub>D<sub>p</sub>) is the diffusion length of holes.
+    <br>
+    ∂<sup>2</sup>y/∂x<sup>2</sup> = y/L<sub>p</sub><sup>2</sup>
+    <br>
+    The general solution of the above equation is,
+    <br>
+    δp<sub>n</sub>(X<sub>n</sub>) = C<sub>1</sub>e<sup>-X<sub>n</sub>/L<sub>p</sub></sup> + C<sub>2</sub>e<sup>X<sub>n</sub>/L<sub>p</sub></sup>
+    <br>
+    Applying the boundary condition.....
+    At X<sub>n</sub>=0 and at X<sub>n</sub>=∞
+    <br>
+    Applying X<sub>n</sub>=0 we get,
+    <br>
+    ∆P<sub>n</sub> = C<sub>1</sub> + C<sub>2</sub>
+    <br>
+    Applying X<sub>n</sub>=∞ we get,
+    <br>0 = C<sub>1</sub>e<sup>-∞</sup> + C<sub>2</sub>e<sup>∞</sup>
+    <br>
+    C<sub>2</sub> = 0
+    <br>
+    Therefore, δp<sub>n</sub>(X<sub>n</sub>) = ∆P<sub>n</sub>e<sup>-X<sub>n</sub>/L<sub>p</sub></sup>
+    <br>
+    This shows that the hole distribution in the n region decays exponentially from it's initial vales ∆P<sub>n</sub>
+    <br>
+    Using Fick's law we can write,
+    <br>
+    Particle flux = -D<sub>p</sub>∂n/∂x
+    <br>
+    w.k.t J=I/A
+    <br>
+    also, J = q*Particle flux
+    <br>
+    Then we can write,
+    <br>
+    J<sub>p</sub>diff(X<sub>n</sub>) = -qD<sub>p</sub>∂δp<sub>n</sub>(X<sub>n</sub>)/∂x<sub>n</sub>
+    <br>
+    I<sub>p</sub>diff(X<sub>n</sub>) = -qAD<sub>p</sub>∂δp<sub>n</sub>(X<sub>n</sub>)/∂x<sub>n</sub>
+    <br>
+    I<sub>p</sub>diff(X<sub>n</sub>) = qAD<sub>p</sub>∆P<sub>n</sub>e<sup>-X<sub>n</sub>/L<sub>p</sub></sup>/L<sub>p</sub>
+    <br>
+    Similarly diffusion current on p-side will be,
+    <br>
+    I<sub>n</sub>diff(X<sub>p</sub>) = -qAD<sub>n</sub>∆N<sub>p</sub>e<sup>-X<sub>p</sub>/L<sub>n</sub></sup>/L<sub>n</sub>
+    <br>
+    The -ve sign shows the direction of the current flow...
+    <br>
+    Substituting the above equations in equation (1) we can write,
+    <br>
+    I = qA( D<sub>p</sub>∆P<sub>n</sub>/L<sub>p</sub> + D<sub>n</sub>∆N<sub>p</sub>/L<sub>n</sub>)e<sup>qV<sub>a</sub>/(kT)</sup>
+    <br>
+    = qA( D<sub>p</sub>P<sub>n0</sub>/L<sub>p</sub> + D<sub>n</sub>N<sub>p0</sub>/L<sub>n</sub>)e<sup>qV<sub>a</sub>/(kT)</sup> - qA( D<sub>p</sub>P<sub>n0</sub>/L<sub>p</sub> + D<sub>n</sub>N<sub>p0</sub>/L<sub>n</sub>)
+    <br>
+    I = I<sub>0</sub>(e<sup>qV<sub>a</sub>/(kT)</sup> - 1) where
+    <br>
+    I<sub>0</sub> = qA( D<sub>p</sub>P<sub>n0</sub>/L<sub>p</sub> + D<sub>n</sub>N<sub>p0</sub>/L<sub>n</sub>)
+    <br>
+    I<sub>0</sub> is the reverse saturation current of the diode.
+
+</p>
+</section>
 <section class="card">
 
 <h2>13. Rectifiers</h2>
