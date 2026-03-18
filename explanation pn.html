@@ -860,15 +860,13 @@ A full wave rectifier uses two or more diodes to allow both halves of the AC wav
 <section class="card">
 <h3>Center-Tapped Full Wave Rectifier</h3>
 <p>
+    <h3>Circuit diagram</h3>
+<img src="https://www.elprocus.com/wp-content/uploads/Center-Tapped-Full-Wave-Rectifier-Circuit.jpg" alt="Center-Tapped Full Wave Rectifier Circuit" width="400"/>
     <h3>1. Definition</h3>
 A center-tapped full wave rectifier uses a transformer with a center-tapped secondary winding and two diodes. Each diode conducts during alternate half cycles of the AC input, allowing both halves of the waveform to be rectified.
 <h3>2. Construction</h3>
-
 A centre tapped transformer consists of:
-
-<h4>Primary winding</h4>
-
-Secondary winding split into two equal halves Centre tap connection at the middle of secondary If the total secondary voltage is Vs, then: Voltage between centre tap and one end = Vs / 2 Voltage between centre tap and other end = Vs / 2 The two halves produce equal magnitude but opposite polarity voltages.
+Primary winding And Secondary winding split into two equal halves Centre tap connection at the middle of secondary If the total secondary voltage is Vs, then: Voltage between centre tap and one end = Vs / 2 Voltage between centre tap and other end = Vs / 2 The two halves produce equal magnitude but opposite polarity voltages.
 
 Example:
 If secondary voltage = 12V
@@ -899,7 +897,9 @@ Upper secondary winding becomes positive First diode conducts Current flows thro
 
 <h4>During the negative half cycle:</h4>
 Lower secondary winding becomes positive Second diode conducts Current flows through load in the same direction Thus both half cycles are used to produce full wave rectification.
-
+<h3>Output Waveform</h3>  
+The output waveform consists of positive pulses corresponding to both half cycles of the input AC signal. This results in a smoother DC output compared to a half wave rectifier, although it still contains some ripple.
+<img src="https://www.electroduino.com/wp-content/uploads/2021/04/Output-Waveform-of-Centre-tapped-Full-Wave-Rectifier.jpg" alt="Output Waveform" width="400"/>
 <h3>5. Voltage Relationship</h3>
 
 If total secondary voltage is 
@@ -984,7 +984,32 @@ Types:
 </ul>
 
 </section>
-
+<section class="card">
+    <h2>Positive Clipper</h2>
+    <img src="https://www.tutorialspoint.com/electronic_circuits/images/positive_series_clipper.jpg" alt="Positive Clipper Circuit" width="500"/>
+<p>
+A positive clipper circuit removes the positive portion of the input signal above a certain threshold voltage. It typically consists of a diode and a reference voltage source. When the input voltage exceeds the reference voltage, the diode conducts and clips the signal, resulting in a modified output waveform that retains only the negative portion of the input signal.
+</p>
+<h2> Negative Clipper</h2>
+<img src="https://www.tutorialspoint.com/electronic_circuits/images/negative_series_clipper.jpg" alt="Negative Clipper Circuit" width="500"/>
+<p>
+A negative clipper circuit removes the negative portion of the input signal below a certain threshold voltage. Similar to the positive clipper, it uses a diode and a reference voltage source. When the input voltage falls below the reference voltage, the diode conducts and clips the signal, resulting in an output waveform that retains only the positive portion of the input signal.
+</p>
+<h2>Biased Clipper</h2>
+<p>
+A biased clipper circuit is designed to clip the input signal at a specific voltage level that is determined by an external biasing voltage. This allows for more control over the clipping level compared to simple positive or negative clippers. The biasing voltage can be adjusted to set the desired clipping threshold, making it useful in applications where precise signal shaping is required.
+</p>
+<h3>Positive Clipper With Forward Bias</h3>
+<img src="https://www.physics-and-radio-electronics.com/electronic-devices-and-circuits/rectifier/images/positiveseriesclipperwithpositivebias.png" alt="Positive Clipper with Forward Bias Circuit" width="500"/>
+<p>
+In a positive clipper with forward bias, the diode is forward biased by an external voltage source. This allows the circuit to clip the input signal at a voltage level that is determined by the biasing voltage. When the input voltage exceeds the biasing voltage, the diode conducts and clips the signal, resulting in an output waveform that retains only the portion of the input signal below the biasing voltage.
+</p>
+<h3>Negative Clipper With Reverse Bias</h3> 
+<img src="https://www.physics-and-radio-electronics.com/electronic-devices-and-circuits/rectifier/images/seriespositiveclipperwithnegativebias.png" alt="Negative Clipper with Reverse Bias Circuit" width="500"/>
+<p>
+In a negative clipper with reverse bias, the diode is reverse biased by an external voltage source. This allows the circuit to clip the input signal at a voltage level that is determined by the biasing voltage. When the input voltage falls below the biasing voltage, the diode conducts and clips the signal, resulting in an output waveform that retains only the portion of the input signal above the biasing voltage.
+</p>
+</section>
 
 <section class="card">
 
@@ -1001,7 +1026,38 @@ without altering its shape.
 </ul>
 
 </section>
-
+<section class="card">
+    <h2>Positive Clamper</h2>
+    <img src="https://www.physics-and-radio-electronics.com/electronic-devices-and-circuits/rectifier/images/positiveclamper.png" alt="Positive Clamper Circuit" width="500"/>
+<p>
+A positive clamper circuit shifts the input signal upward by adding a DC voltage level to it. It typically consists of a diode, a capacitor, and a resistor. The diode charges the capacitor to the peak voltage of the input signal during the positive half cycle. During the negative half cycle, the capacitor discharges through the resistor, effectively adding a DC offset to the input signal and shifting it upward.
+</p>
+<h2>Positive Clamper With Forward Bias</h2>
+<img src="https://www.physics-and-radio-electronics.com/electronic-devices-and-circuits/rectifier/images/positiveclamperwithpositivebias.png" alt="Positive Clamper with Forward Bias Circuit" width="500"/>
+<p>
+In a positive clamper with forward bias, the diode is forward biased by an external voltage source. This allows the circuit to shift the input signal upward by a voltage level that is determined by the biasing voltage. When the input voltage exceeds the biasing voltage, the diode conducts and charges the capacitor, resulting in an output waveform that is shifted upward by the biasing voltage.
+</p>
+<h2>Positive Clamper With Reverse Bias</h2>
+<img src="https://svkg.in/wp-content/uploads/2022/05/Positive-Clamper-with-Negative-Bias-Circuit-Diagram-with-watermark.png" alt="Positive Clamper with Reverse Bias Circuit" width="500"/>
+<p>
+In a positive clamper with reverse bias, the diode is reverse biased by an external voltage source. This allows the circuit to shift the input signal upward by a voltage level that is determined by the biasing voltage. When the input voltage falls below the biasing voltage, the diode conducts and charges the capacitor, resulting in an output waveform that is shifted upward by the biasing voltage.
+</p>
+<h2>Negative Clamper</h2>
+<img src="https://www.physics-and-radio-electronics.com/electronic-devices-and-circuits/rectifier/images/negativeclamper.png" alt="Negative Clamper Circuit" width="500"/>
+<p>
+A negative clamper circuit shifts the input signal downward by subtracting a DC voltage level from it. Similar to the positive clamper, it uses a diode, a capacitor, and a resistor. The diode charges the capacitor to the peak voltage of the input signal during the negative half cycle. During the positive half cycle, the capacitor discharges through the resistor, effectively subtracting a DC offset from the input signal and shifting it downward.
+</p>
+<h2>Negative Clamper With Forward Bias</h2>
+<img src="https://electronicscoach.com/wp-content/uploads/2018/07/negative-clamper-with-positive-biasing.jpg" alt="Negative Clamper with Forward Bias Circuit" width="500"/>
+<p>
+In a negative clamper with forward bias, the diode is forward biased by an external voltage source. This allows the circuit to shift the input signal downward by a voltage level that is determined by the biasing voltage. When the input voltage exceeds the biasing voltage, the diode conducts and charges the capacitor, resulting in an output waveform that is shifted downward by the biasing voltage.
+</p>
+<h2>Negative Clamper With Reverse Bias</h2>
+<img src="https://svkg.in/wp-content/uploads/2022/05/Negative-Clamper-with-Negative-Bias-Circuit-Diagram-with-watermark.png" alt="Negative Clamper with Reverse Bias Circuit" width="500"/>
+<p>
+In a negative clamper with reverse bias, the diode is reverse biased by an external voltage source. This allows the circuit to shift the input signal downward by a voltage level that is determined by the biasing voltage. When the input voltage rises above the biasing voltage, the diode conducts and charges the capacitor, resulting in an output waveform that is shifted downward by the biasing voltage.
+</p>
+</section>
 
 <section class="card">
 
