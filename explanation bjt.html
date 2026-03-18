@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Module II – Bipolar Junction Transistor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Module II – Bipolar Junction Transistor (BJT)</h1>
+<p>ECE 1201 – Electron Devices</p>
+</header>
+
+<nav>
+<a href="module1.html">← Previous</a>
+<a href="index.html">Home</a>
+<a href="module3.html">Next →</a>
+</nav>
+
+<section class="card">
+
+<h2>1. Introduction to BJT</h2>
+
+<p>
+A Bipolar Junction Transistor (BJT) is a three-layer semiconductor device
+used for amplification and switching applications.
+</p>
+
+<p>
+It consists of three regions:
+</p>
+
+<ul>
+<li>Emitter (E)</li>
+<li>Base (B)</li>
+<li>Collector (C)</li>
+</ul>
+
+</section>
+<section class="card">
+<h3>Transistor Construction</h3>
+<img src="https://www.elprocus.com/wp-content/uploads/Construction-of-BJT-300x158.jpg" alt="BJT Construction Diagram" width="500"/>
+<p>
+The BJT is constructed by sandwiching a thin layer of one type of semiconductor material (the base) between two layers of the opposite type (the emitter and collector). The emitter is heavily doped to inject a large number of charge carriers, while the collector is lightly doped to collect these carriers. The base is very thin and lightly doped, allowing most of the carriers from the emitter to pass through to the collector.
+</p>
+</section>
+<section class="card">
+
+<h2>2. Types of BJT</h2>
+
+<h3>NPN Transistor</h3>
+<img src="https://www.electricaltechnology.org/wp-content/uploads/2020/04/NPN-Transistor-Construction-Working.png" alt="NPN Transistor Diagram" width="500"/>
+<p>
+In NPN transistor, current is mainly due to electrons.
+</p>
+
+<h3>PNP Transistor</h3>
+<img src="https://www.electricaltechnology.org/wp-content/uploads/2020/04/PNP-Transistor-Construction-Working.png" alt="PNP Transistor Diagram" width="500"/>
+
+<p>
+In PNP transistor, current is mainly due to holes.
+</p>
+
+</section>
+
+<section class="card">
+
+<h2>3. Working Principle</h2>
+
+<p>
+In a BJT, the emitter injects charge carriers into the base.
+The base is very thin, so most carriers move into the collector.
+</p>
+
+<ul>
+<li>Emitter-base junction is forward biased</li>
+<li>Collector-base junction is reverse biased</li>
+</ul>
+
+</section>
+
+<section class="card">
+
+<h2>4. Current Components</h2>
+
+<p>
+In a transistor:
+</p>
+
+<ul>
+<li>Emitter current (IE)</li>
+<li>Base current (IB)</li>
+<li>Collector current (IC)</li>
+</ul>
+
+<p>
+Relationship:
+</p>
+
+<p><b>IE = IB + IC</b></p>
+
+</section>
+
+<section class="card">
+
+<h2>5. Transistor Configurations</h2>
+
+<h3>Common Base (CB)</h3>
+<ul>
+<li>Low input resistance</li>
+<li>High output resistance</li>
+<li>Used in high-frequency applications</li>
+</ul>
+
+<h3>Common Emitter (CE)</h3>
+<ul>
+<li>Most widely used</li>
+<li>High gain</li>
+<li>Used in amplifiers</li>
+</ul>
+
+<h3>Common Collector (CC)</h3>
+<ul>
+<li>Used as buffer</li>
+<li>High input resistance</li>
+</ul>
+
+</section>
+
+<section class="card">
+
+<h2>6. Input and Output Characteristics</h2>
+
+<p>
+Characteristics show the relationship between voltage and current in different configurations.
+</p>
+
+<ul>
+<li>Input characteristic: IB vs VBE</li>
+<li>Output characteristic: IC vs VCE</li>
+</ul>
+
+</section>
+
+<section class="card">
+
+<h2>7. Hybrid Model</h2>
+
+<p>
+The hybrid model is used to analyze transistor circuits using parameters:
+</p>
+
+<ul>
+<li>hie (input impedance)</li>
+<li>hfe (current gain)</li>
+<li>hoe (output admittance)</li>
+<li>hre (reverse voltage gain)</li>
+</ul>
+
+</section>
+
+<section class="card">
+
+<h2>8. Ebers-Moll Model</h2>
+
+<p>
+The Ebers-Moll model represents the transistor using two diodes and current sources.
+It explains transistor operation in all regions.
+</p>
+
+</section>
+
+<section class="card">
+
+<h2>9. Biasing Techniques</h2>
+
+<p>
+Biasing is used to set the transistor operating point.
+</p>
+
+<ul>
+<li>Fixed bias</li>
+<li>Collector-to-base bias</li>
+<li>Voltage divider bias</li>
+</ul>
+
+</section>
+
+<section class="card">
+
+<h2>10. Q-Point and Stability</h2>
+
+<p>
+Q-point (Quiescent point) is the operating point of the transistor.
+It should be stable for proper amplifier operation.
+</p>
+
+</section>
+
+<section class="card">
+
+<h2>11. Load Line Analysis</h2>
+
+<p>
+Load line represents all possible operating points of a transistor.
+</p>
+
+<ul>
+<li>DC load line</li>
+<li>AC load line</li>
+</ul>
+
+</section>
+
+<section class="card">
+
+<h2>12. Early Effect</h2>
+
+<p>
+Early effect is the variation of collector current due to change in collector-base voltage.
+</p>
+
+</section>
+
+<section class="card">
+
+<h2>13. Thermal Runaway</h2>
+
+<p>
+Increase in temperature increases collector current, which further increases temperature.
+This may damage the transistor.
+</p>
+
+</section>
+
+<section class="card">
+
+<h2>14. Applications</h2>
+
+<h3>Amplifier</h3>
+<p>
+BJT is used to amplify weak signals.
+</p>
+
+<h3>Switch</h3>
+<p>
+BJT works as ON/OFF switch in digital circuits.
+</p>
+
+</section>
+
+<section class="card">
+
+<h2>Learning Outcome</h2>
+
+<ul>
+<li>Understand BJT operation</li>
+<li>Analyze transistor characteristics</li>
+<li>Design amplifier circuits</li>
+<li>Use BJT as a switch</li>
+</ul>
+
+</section>
+
+<footer>
+<p>© 2026 ECE Department | Developed by Omar</p>
+</footer>
+
+</body>
+</html>
